@@ -1,5 +1,6 @@
 package com.example.githubdemo;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
@@ -34,6 +35,16 @@ public class MainActivity extends AppCompatActivity {
 
                     }
                 });
+            }
+        });
+
+        binding.btnSendData.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                User user = new User("Shyam",22);
+                Intent intent = new Intent(MainActivity.this, SecondActivity.class);
+                intent.putExtra("user",user);
+                startActivity(intent);
             }
         });
     }
