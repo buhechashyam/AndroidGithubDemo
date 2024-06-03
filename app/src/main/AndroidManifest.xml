@@ -16,6 +16,9 @@
             android:name=".auth.LoginActivity"
             android:exported="false" />
         <activity
+            android:name=".home.HomeActivity"
+            android:exported="false" />
+        <activity
             android:name=".SecondActivity"
             android:exported="false" />
         <activity
